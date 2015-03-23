@@ -1,0 +1,18 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the java portion of the s3eAndroidUserActivity extension on android
+platform JAVA
+
+files
+{
+    (source/android)
+    s3eAndroidUserActivity.java
+}
+
+librarypath "$MARMALADE_ROOT/s3e/deploy/plugins/android/android.jar"
+librarypath "$MARMALADE_ROOT/s3e/loader/android/s3e_release.jar"
+
+# Put paths to the jar file from any extension that you are using here. e.g.
+librarypath "../s3eAndroidFullscreen/lib/android/s3eAndroidFullscreen.jar"
+librarypath "../s3eAndroidController/lib/android/s3eAndroidController.jar"
+
+option output-name=lib/android/s3eAndroidUserActivity.jar

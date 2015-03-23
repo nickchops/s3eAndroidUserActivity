@@ -1,0 +1,12 @@
+# Subproject for including custom activity that call out to
+# multiple Marmalade Android extensions.
+# This was created as a normal Android extension via a dummy s4e file but
+# stripped down (s4e etc. removed) as it only includes Java code.
+
+display_name "Extensions/s3eAndroidUserActivity"
+
+deployments
+{
+    android-external-jars="lib/android/s3eAndroidUserActivity.jar"
+	android-custom-activity='com.nickchops.s3eAndroidUserActivity.s3eAndroidUserActivity'
+}
