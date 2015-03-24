@@ -13,23 +13,32 @@ import com.ideaworks3d.marmalade.LoaderAPI;
 import com.ideaworks3d.marmalade.LoaderActivity;
 
 // Import packages from any extensions you need to call. e.g.
-import com.nickchops.s3eAndroidFullscreen.s3eAndroidFullscreen;
 
-import com.nickchops.s3eAndroidController.s3eAndroidControllerActivity;
-import android.os.Bundle;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
+// For https://github.com/nickchops/s3eAndroidFullscreen
+//import com.nickchops.s3eAndroidFullscreen.s3eAndroidFullscreen;
+
+// For https://github.com/nickchops/s3eAndroidController
+//import com.nickchops.s3eAndroidController.s3eAndroidControllerActivity;
+//import android.os.Bundle;
+//import android.view.KeyEvent;
+//import android.view.MotionEvent;
 
 // Add calls to any extensions you are using as instructed
-// s3eAndroidController and s3eAndroidFullscreen are commented out as examples
+// s3eAndroidController and s3eAndroidFullscreen are shown as examples
+// Add/comment out as needed
 public class s3eAndroidUserActivity extends LoaderActivity
 {
+    // For s3eAndroidFullscreen
+    /*
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         s3eAndroidFullscreen.onWindowFocusChanged(hasFocus);
     }
+    */
     
+    // For s3eAndroidController
+    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,4 +59,5 @@ public class s3eAndroidUserActivity extends LoaderActivity
     public boolean onGenericMotionEvent(MotionEvent event) {
         return s3eAndroidControllerActivity.onGenericMotionEvent(event) ? true : super.onGenericMotionEvent(event);
     }
+    */
 }
