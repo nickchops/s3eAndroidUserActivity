@@ -7,7 +7,9 @@ other extensions that each extend the main activity.
 If creating an extension, you need to design it to use s3eAndroidUserActivity
 
 If using an extension that was designed for s3eAndroidUserActivity, it should
-have setup instructions. 
+have setup instructions.
+
+I'm using this for s3eAndroidFullscreen and s3eAndroidController/IwController
 
 **Background:** Some Android features require extending the "main activity".
 Usually this is becuase they need access to a callback/event that is only
